@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/ghibli-background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background: #fff;
+    color: #000;
+}
+ul{
+    margin-left: -45pcx;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+.main{
+    width: 800px;
+    height: 450px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding-top: 35px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+.img img{
+    height: 150px;
+    width: 150px;
+    background-image: url('image/circle.jpg'); /* Ganti dengan path menuju gambar yang ingin digunakan */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Membuat border berbentuk lingkaran */
+    border: 6px solid transparent;
+    transition: transform 0.5s;
+}
+.img img:hover{
+    transform: translateY(-10px)
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.text{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: #639ab8;
+}
+p{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 700px;
+    height: auto;
+    color: #fff;
+}
+ul.social-links {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.social-links li:last-child {
+    margin-right: 0;
+}
+
+ul.social-links li a {
+    text-decoration: none;
+}
+
+ul.social-links li a img {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-image: none;
+}
+/* gayaprofil.css */
+
+/* Gaya Dropdown */
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 5px;
+}
+
+ul.dropdown-menu li {
+    display: inline;
+}
+
+ul.dropdown-menu li a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+ul.dropdown-menu li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Memunculkan Dropdown ketika Mouse Hover */
+li:hover ul.dropdown-menu {
+    display: block;
+}
